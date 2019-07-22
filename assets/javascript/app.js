@@ -1,5 +1,6 @@
 $( document ).ready(function() {
 
+
     //trivia quetions
 var triviaQuestion = [
     
@@ -130,7 +131,7 @@ var time = 30;
 var intervalId;
 
 //start button
-$('#start').append("<button type='button'>" + 'Start' + "</button>")
+$('#start').append("<button type='button' id='start-button'>" + 'Start' + "</button>")
 $('#start').on('click', startGame);
 
 //function to start the game 
@@ -143,7 +144,7 @@ if (questionIndex === 10){
 }
 
 $('#start').remove();
-$("#time").html("<h2>" + time + "</h2>");
+$("#time").html("<h1>" + time + "</h1>");
 
 function run() {
     intervalId = setInterval(decrement, 1000);
@@ -151,7 +152,7 @@ function run() {
   function decrement() {
 
     time--;
-    $("#time").html("<h2>" + time + "</h2>");
+    $("#time").html("<h1>" + time + "</h1>");
    
     if (time === 0){
         checkAnswer();
@@ -169,7 +170,7 @@ run();
         var giphy = triviaQuestion[questionIndex].giphy;
         
         
-        $('#trivia').html('<p>' + question + '</p>');
+        $('#trivia').html('<p id="question">' + question + '</p>');
  
         for(j=0;j<answers.length;j++){
             var answerBtns=$('<button type="button" name="response" class="response">' + answers[j] + '</button>');
@@ -212,7 +213,7 @@ run();
                 clearInterval(intervalId);
                 user.incorrect++
                 $('#time').empty();
-                $('#trivia').html('<h2>' + 'WRONG ' + '</h2>');
+                $('#trivia').text('WRONG');
                 var showGiphy = $('<img>');
                 showGiphy.attr("src", giphy);
                 showGiphy.attr("alt", user.choice);

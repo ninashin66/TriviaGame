@@ -1,0 +1,74 @@
+body{
+    background: url(../images/wp1850832-harry-potter-book-wallpapers.jpg);
+    background-size: 100%;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+
+#logo{
+    width: 30%;
+    position: relative;
+    left: 34%;
+}
+
+.middle{
+    font-family: 'Shadows Into Light', cursive;
+    text-align: center;
+    margin: 35px 250px 20px 250px;
+    padding: 20px;
+}
+
+#start-text{
+    weight: bold;
+    font-size: 50px;
+    margin-top: 20px;
+    opacity: 1;
+}
+
+#start-button{
+    text-align: center;
+    height: 50px;
+    width: 75px;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    font-family: Helvetica;
+    border: none;
+}
+
+#question{
+    font-size: 35px;
+}
+
+.response{
+    width: auto;
+    height: 50px;
+    margin: 5px;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    font-family: Helvetica;
+    border: none;
+    border-radius: 10px;
+}
+
+img{
+    width: 75%;
+    height: auto;
+}
+
+#trivia{
+    font-size: 40px;
+}
+
+#restart{
+    height: 50px;
+    width: 100px;
+    font-size: 20px;
+    font-family: Helvetica;
+    position: relative;
+    left: 33%;
+    border: none;
+    border-radius: 5px;
+}
